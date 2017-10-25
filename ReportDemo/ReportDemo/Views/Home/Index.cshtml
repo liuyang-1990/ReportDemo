@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+    <div>
+        <iframe id="reportIframe" name="_self" style="display: none; width: 100%;"></iframe>
+    </div>
+    <script>
+        $("#reportIframe").attr("src", "/ReportPage/UserReport.aspx");
+        $("#reportIframe").css("display", "block");
+    </script>
+</body>
+</html>
